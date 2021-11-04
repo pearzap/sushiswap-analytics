@@ -101,7 +101,7 @@ export default function Transactions({ transactions, txCount }) {
             key: "to",
             label: "To",
             render: (row) => (
-              <Link href={`https://etherscan.io/address/${row.to}`}>
+              <Link href={`https://polygonscan.com/address/${row.to}`}>
                 {row.to}
               </Link>
             ),

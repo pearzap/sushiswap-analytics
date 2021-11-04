@@ -1,6 +1,6 @@
-# SushiSwap Analytics
+# PearZap Analytics
 
-SushiSwap Analytics is a progressive web application for the SushiSwap Protocol.
+PearZap Analytics is a progressive web application for the PearZap Exchange.
 
 ## Getting started
 

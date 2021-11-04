@@ -142,7 +142,7 @@ function AppShell(props) {
       >
         <div className={classes.toolbar} />
         <Container maxWidth="xl">{children}</Container>
-        {/* <AppFooter /> */}
+        <AppFooter />
       </main>
     </div>
   );

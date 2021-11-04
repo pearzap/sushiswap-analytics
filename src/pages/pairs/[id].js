@@ -4,7 +4,6 @@ import {
   BarChart,
   BasicTable,
   Chart,
-  IntoTheBlock,
   KPI,
   Link,
   PageHeader,
@@ -188,7 +187,7 @@ function PairPage(props) {
     <AppShell>
       <Head>
         <title>
-          {pair.token0.symbol}-{pair.token1.symbol} | SushiSwap Analytics
+          {pair.token0.symbol}-{pair.token1.symbol} | PearZap Analytics
         </title>
       </Head>
       <PageHeader>
@@ -201,7 +200,7 @@ function PairPage(props) {
           </Box>
           <Box display="flex" alignItems="center" className={classes.links}>
             <Link
-              href={`https://exchange.sushiswapclassic.org/#/add/${pair.token0.id}/${pair.token1.id}`}
+              href={`https://exchange.pearzap.com/#/add/${pair.token0.id}/${pair.token1.id}`}
               target="_blank"
               variant="body1"
               className={classes.firstLink}
@@ -209,7 +208,7 @@ function PairPage(props) {
               Add Liquidity
             </Link>
             <Link
-              href={`https://exchange.sushiswapclassic.org/#/swap?inputCurrency=${pair.token0.id}&outputCurrency=${pair.token1.id}`}
+              href={`https://exchange.pearzap.com/#/swap?inputCurrency=${pair.token0.id}&outputCurrency=${pair.token1.id}`}
               target="_blank"
               variant="body1"
             >
@@ -392,7 +391,7 @@ function PairPage(props) {
               label: `${pair.token1.symbol} Address`,
               maxWidth: "250px",
             },
-            { key: "etherscan", label: "Etherscan", align: "right" },
+            { key: "etherscan", label: "Polygonscan", align: "right" },
           ]}
           bodyCells={[
             <Typography variant="body2" noWrap>
@@ -404,12 +403,9 @@ function PairPage(props) {
             <Typography variant="body2" noWrap>
               {pair.token1.id}
             </Typography>,
-            <Link href={`https://etherscan.io/address/${pair.id}`}>View</Link>,
+            <Link href={`https://polygonscan.com/address/${pair.id}`}>View</Link>,
           ]}
         />
-      </Box>
-      <Box my={4}>
-        <IntoTheBlock pairAddress={pair.id} />
       </Box>
       <Box my={4}>
         <Transactions transactions={transactions} txCount={pair.txCount} />

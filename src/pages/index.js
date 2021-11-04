@@ -83,7 +83,7 @@ function IndexPage() {
   return (
     <AppShell>
       <Head>
-        <title>Dashboard | SushiSwap Analytics</title>
+        <title>Dashboard | PearZap Analytics</title>
       </Head>
       <Box mb={3}>
         <Search pairs={pairs} tokens={tokens} />
@@ -134,16 +134,6 @@ function IndexPage() {
 
         <Grid item xs={12}>
           <TokenTable title="Top Tokens" tokens={tokens} />
-        </Grid>
-
-        <Grid item xs={12}>
-          <PoolTable
-            title="Sushi Reward Pools"
-            pools={pools}
-            orderBy="tvl"
-            order="desc"
-            rowsPerPage={25}
-          />
         </Grid>
       </Grid>
     </AppShell>
