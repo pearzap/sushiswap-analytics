@@ -129,7 +129,7 @@ function IndexPage() {
         </Grid>
 
         <Grid item xs={12}>
-          <PairTable title="Top Sushi Liquidity Pairs" pairs={pairs} />
+          <PairTable title="Top Liquidity Pairs" pairs={pairs} />
         </Grid>
 
         <Grid item xs={12}>
