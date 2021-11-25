@@ -6,6 +6,7 @@ export const currencyFormatter = new Intl.NumberFormat(locales, {
   style: "currency",
   currency: "USD",
   minimumFractionDigits: 2,
+  maximumFractionDigits: 4,
 });
 
 export const decimalFormatter = new Intl.NumberFormat(locales, {

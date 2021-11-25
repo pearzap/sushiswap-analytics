@@ -200,7 +200,7 @@ function PairPage(props) {
           </Box>
           <Box display="flex" alignItems="center" className={classes.links}>
             <Link
-              href={`https://exchange.pearzap.com/#/add/${pair.token0.id}/${pair.token1.id}`}
+              href={`https://exchange.pearzap.com/add/${pair.token0.id}/${pair.token1.id}`}
               target="_blank"
               variant="body1"
               className={classes.firstLink}
@@ -208,7 +208,7 @@ function PairPage(props) {
               Add Liquidity
             </Link>
             <Link
-              href={`https://exchange.pearzap.com/#/swap?inputCurrency=${pair.token0.id}&outputCurrency=${pair.token1.id}`}
+              href={`https://exchange.pearzap.com/swap?inputCurrency=${pair.token0.id}&outputCurrency=${pair.token1.id}`}
               target="_blank"
               variant="body1"
             >
